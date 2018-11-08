@@ -116,7 +116,7 @@ export default Component.extend({
       return;
     }
     this.get('flashMessages').success(
-      `Successfully mounted ${type} ${this.get('mountType')} method at ${path}.`
+      `Successfully mounted the ${type} ${this.get('mountType')} engine at ${path}.`
     );
     if (this.get('mountType') === 'secret') {
       yield this.get('onMountSuccess')(type, path);
